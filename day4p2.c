@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
 {
 	int i = 0, j = 0, k = -2, cards[GAMES][MYNUM+WINNUM];
 	bool flag = true;
-  int numCards[GAMES];
+	int numCards[GAMES];
 	int curr = 0;
 	int count = 0, sum = 0;
 	int num = 0;
@@ -56,7 +56,7 @@ int main(int argc, char* argv[])
 	
 	for (; i < GAMES; i++)
 	{
-    numCards[i] = 1;
+		numCards[i] = 1;
 		fgets(buffer, 400, fp);
 		k = -2;
 		for (j = 0; buffer[j] != '\n'; j++)
