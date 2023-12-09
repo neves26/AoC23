@@ -40,8 +40,8 @@ int main(int argc, char** argv) {
 	}
 
 	while(feof(fp) == 0) {
-		fscanf(fp, "%s", buffer); /*both lines work, which one is better?*/
-		//fgets(buffer, 200, fp);
+		fscanf(fp, "%s", buffer);
+		fgets(buffer, 200, fp);
 
 		for(i = 0; buffer[i]!='\0'; i++) {
 			if(isNum(buffer[i])) {
